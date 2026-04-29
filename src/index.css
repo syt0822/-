@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap');
+
+@theme {
+  --font-serif: "Manrope", sans-serif;
+  --font-sans: "Manrope", sans-serif;
+
+  /* Sleek Interface Colors */
+  --color-brand-primary: #0f172a; /* slate-900 */
+  --color-brand-primary-container: #4f46e5; /* indigo-600 */
+  --color-brand-secondary: #6366f1; /* indigo-500 */
+  --color-brand-secondary-container: #e0e7ff; /* indigo-100 */
+  --color-brand-background: #f8fafc; /* slate-50 */
+  --color-brand-surface: #ffffff;
+  --color-brand-outline: #e2e8f0; /* slate-200 */
+
+  /* Spacing & Rounding */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-background text-brand-primary font-sans antialiased;
+  }
+}
+
+.soft-shadow {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.glass-panel {
+  @apply bg-white border border-slate-200 shadow-sm;
+}
